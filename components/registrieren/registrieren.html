@@ -1,0 +1,20 @@
+<div style="margin:30px">
+    <form class="form-horizontal">
+        <fieldset>
+            <legend>Neuen Kunden registrieren</legend>
+            <input style="margin:10px" type="radio" ng-model="ngtype" value="F"><label for="F"> Firmenkunde</label>
+            <input style="margin:10px" type="radio" ng-model="ngtype" value="P"><label for="P"> Privatkunde</label>
+            <input style="margin-top:10px;width:600px" type="text" class="form-control" placeholder="Loginname" ng-model="ngloginname">
+            <input style="margin-top:10px;width:600px" type="password" class="form-control" placeholder="Passwort" ng-model="ngpasswort">
+            <input style="margin-top:10px;width:600px" type="password" class="form-control" placeholder="Passwort Wdh." ng-model="ngpasswortWdh">
+            <input style="margin-top:10px;width:600px" type="text" class="form-control" placeholder="Nachname" ng-model="ngnachname">
+            <input style="margin-top:10px;width:600px" type="text" class="form-control" placeholder="Vorname" ng-model="ngvorname">
+            <input style="margin-top:10px;width:600px" type="text" class="form-control" placeholder="eMail" ng-model="ngemail">
+            <input style="margin-top:10px;width:600px" type="text" class="form-control" placeholder="PLZ" ng-model="ngplz">
+            <input style="margin-top:10px;width:600px" type="text" class="form-control" placeholder="Ort" ng-model="ngort">
+            <input style="margin-top:10px;width:600px" type="text" class="form-control" placeholder="Straße" ng-model="ngstrasse">
+            <input style="margin-top:10px;width:600px" type="text" class="form-control" placeholder="Hausnr." ng-model="nghausnr">
+            <button style="float:left;margin-top:20px;width:600px" type="button" class="btn btn-primary btn-lg" ng-click="registrieren.submit(ngtype, ngloginname, ngpasswort, ngpasswortWdh, ngemail, ngnachname, ngvorname, ngplz, ngort, ngstrasse, nghausnr)">Registrieren</button>
+        </fieldset>
+    </form>
+</div>

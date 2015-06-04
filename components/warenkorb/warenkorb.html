@@ -1,0 +1,29 @@
+<div>
+    <h1>Unser Warenkorb</h1>
+    <p class="page-header"></p>
+</div>
+<div class="container">
+    <div class="content">
+        <div>
+            <table class="warenkorb_table table-hover" style="width:100%">
+                <tr>
+                    <th>
+                        Artikel Nr.
+                    </th>
+                    <th>
+                        Bezeichnung
+                    </th>
+                    <th>
+                        Preis
+                    </th>
+                </tr>
+                <tr ng-repeat="artikelInfo in warenkorb.artikelInfos">
+                    <td> {{ artikelInfo.artikelNr }} </td>
+                    <td> {{ artikelInfo.bezeichnung }} </td>
+                    <td> {{ artikelInfo.preis | currency }} </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+</div>

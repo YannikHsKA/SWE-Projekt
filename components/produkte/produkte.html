@@ -1,0 +1,24 @@
+    <div ng-repeat="artikelInfo in produkte.artikelInfos">
+        <div ng-if="produkte.id == artikelInfo.id">
+        <h1>Unsere Produkte</h1>
+        <h3>Produkt: {{ artikelInfo.bezeichnung }}</h3>
+        <p class="page-header"></p>
+
+        <div class="container">
+            <div class="content">
+                <div class="col-md-8">
+                    <ul class="list-group">
+                        <li class="list-group-item"><img ng-src="{{ artikelInfo.artikel_img }}"></li>
+                        <li class="list-group-item"><span>Artikel Nr.:</span> {{ artikelInfo.id }} </li>
+                        <li class="list-group-item"><span>Bezeichnung:</span> {{ artikelInfo.bezeichnung }} </li>
+                        <li class="list-group-item"><span>Preis:</span> {{ artikelInfo.preis | currency }} </li>
+                        <li class="list-group-item"><span>Beschreibung:</span> {{ artikelInfo.beschreibung }} </li>
+                    </ul>
+                    <button type="button" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-shopping-cart">  {{  artikelInfo.bezeichnung }} kaufen </span>
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
